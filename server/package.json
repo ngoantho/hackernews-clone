@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "resolutions": {
+    "@prisma/client/.prisma": "link:node_modules/.prisma"
+  },
   "dependencies": {
     "@prisma/client": "^2.19.0",
     "apollo-server": "^2.21.2",
